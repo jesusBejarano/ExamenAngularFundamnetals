@@ -1,0 +1,8 @@
+<div class="container">
+    <div *ngFor="let detail of detalles" class="card" style="margin: 10px 0; ">
+        <app-card-detail [title]="detail.title" [section]="detail.section" [classes]="detail.classes">
+
+        </app-card-detail>
+    </div>
+</div>
+

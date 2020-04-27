@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div  
+        *ngFor="let curso of cursos"
+        class="col-12 col-sm-6 col-md-4 col-xl-3">
+            <app-card-home
+                [id] = "curso.id"
+                [img] = "curso.img"
+                [title] = "curso.title"
+                [instructor] = "curso.instructor"
+                [progress] = "curso.progress"
+
+                (goDetails)="goDetalle($event)"
+            >
+
+            </app-card-home>
+        </div>
+    </div>
+</div>
